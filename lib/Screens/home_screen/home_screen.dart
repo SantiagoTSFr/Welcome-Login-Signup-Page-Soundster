@@ -4,7 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 class HomeScreen extends StatelessWidget {
   final String name;
-  const HomeScreen({Key key, this.name}) : super(key: key);
+  const HomeScreen({Key? key,required this.name}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -215,10 +215,10 @@
       "name": "flutter_auth",
       "rootUri": "../",
       "packageUri": "lib/",
-      "languageVersion": "2.2"
+      "languageVersion": "2.12"
     }
   ],
-  "generated": "2022-02-24T03:25:44.038665Z",
+  "generated": "2022-02-25T00:43:01.406471Z",
   "generator": "pub",
   "generatorVersion": "2.15.1"
 }

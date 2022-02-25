@@ -45,13 +45,13 @@ void main() {
   final AuthRepository authRepository = AuthRepository();
   runApp(BlocProvider(
     create: (context) =>
-    LoginBloc(),
-    child: App(null,authRepository),
+    LoginBloc()..add(AppStarted()),
+    child: App(authRepository: authRepository),
   ));
 }
 class App extends StatelessWidget {
   final AuthRepository _authRepository;
-  const App(Key key, AuthRepository authRepository)
+  const App({Key? key,required AuthRepository authRepository})
       : _authRepository = authRepository,
         super(key: key);
   @override
